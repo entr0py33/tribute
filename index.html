@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenacious D</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+  </head>
+  <body>
+    <script>
+        var music = new Audio('./media/Tribute.mp3');
+        // Checks if music is playing and toggles play/pause, also changes text
+        function playAudio() {
+            if (music.paused)
+            {
+                music.play();
+                document.getElementById("playPrompt").innerHTML = "Click Album to Stop"
+            }
+            else
+            {
+                music.pause();
+                document.getElementById("playPrompt").innerHTML = "Click Album to Rock"
+            }
+        }
+    </script>
+    <!-- First screen with album cover -->
+    <h2 id="playPrompt">Click Album to Rock</h2>
+    <div id="album" onclick="playAudio()">
+        <div id="disc"></div>
+    </div>
+    <h2>Scroll down</h2>
+
+    <!-- Section on Tenacious D -->
+    <div class="parallax bgimg-1">
+        <div class="banner"><h2>Tenacious D</h2>
+            <p> is an American comedy rock duo formed in Los Angeles, California, in 1994. It was founded by actors Jack Black and Kyle Gass, who were members of The Actors' Gang theater company at the time. The duo's name is derived from "tenacious defense", a phrase used by NBA basketball sportscasters Walt Frazier and Marv Albert. In 2000, they signed with Epic Records and the year after released Tenacious D, their debut album featuring a full band, including Dave Grohl on the drums. Their cover of Ronnie James Dio's "The Last in Line" won a Grammy for best heavy metal performance at the 57th Annual Grammy Awards.</p>
+        </div>
+    </div>
+
+    <!-- Section on Jack Black -->
+    <div class="parallax bgimg-2">
+        <div class="banner"><h2>Jack Black</h2>
+            <p> Thomas Jacob "Jack" Black was born on August 28, 1969 in Santa Monica, California to Judith Love Cohen & Thomas William Black, both satellite engineers. Black attended the University of California at Los Angeles. While at UCLA, he was a member of Tim Robbins' acting troupe & it was through this collaboration that led to his 1992 film debut in Bob Roberts (1992). Jack's appearances in such television shows as The X-Files (1993), his breakthrough performance in High Fidelity (2000) & his band, Tenacious D have created an ever-growing cult following. His film credits since have included Shallow Hal (2001), Orange County (2002), School of Rock (2003), Gulliver's Travels (2010), Bernie (2011), The Kung-fu Panda films and the Jumanji Franchise </p>
+        </div>
+    </div>
+
+    <!-- Section on Kyle Gass -->
+    <div class="parallax bgimg-3">
+        <div class="banner"><h2>Kyle Gass</h2>
+            <p>Kyle Richard Gass (born July 14, 1960) is an American musician, comedian and actor. He also co-founded the bands Trainwreck and the Kyle Gass Band, with which he also performs. In 1982, he joined Tim Robbins' The Actors' Gang and in the early 1990s met and befriended Jack Black in the group. In Tenacious D, Gass plays lead guitar and sings backing vocals, and also plays the role of Black's comic foil in most of their comedy routines.</p>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- Section on the song Tribute -->
+    <h2>Tribute</h2>
+    <img src="./media/tribute.gif">
+    <div class="banner lightBanner">
+        <p>"Tribute" is the first single of American comedy rock duo Tenacious D's self-titled debut album (2001). he song chronicles the band members' encounter with a demon who demands the duo play "the best song in the world" or have their souls eaten. Having nothing to lose from trying, they play "the first thing that came to our heads", which "just so happened to be the best song in the world." Some critics described the plot of the song as being similar to the song "The Devil Went Down to Georgia"</p>
+    </div>
+    <br><br>
+
+    <!-- Youtube videos -->
+    <h2>Bonus Videos</h2>
+    <div id="videos">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cLmCJKT5ssw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mQUVwbzmwFw?start=40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </body>
+</html>
